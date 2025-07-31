@@ -1,0 +1,68 @@
+body{
+  text-align: center;
+  background-color: #faf9f6;
+  background: linear-gradient(-45deg, #f99b45, #63aac0, #819ff9, #d95980);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.btn{
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: 10px solid black;
+  margin: 1.8rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);
+  transform: scale(1.05);
+}
+
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.yellow{
+  background-color: #f99b45;
+}
+.green{
+  background-color: #63aac0;
+}
+.purple{
+  background-color: #819ff9;
+}
+.red{
+  background-color: #d95980;
+}
+
+.flash{
+  background-color: #fff;
+}
+
+.userflash{
+  background-color: #2ecc71; 
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-one, .line-two {
+  display: flex;
+  justify-content: center;
+}
+
